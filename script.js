@@ -1,3 +1,15 @@
+const auth=firebase.auth();
+const db =firebase.firestore();
+auth.onAuthstatechanged(async(user) =>{
+    const loginData = {
+        uid: user.aid,
+        page:window.location.href,
+        timestamp:new date()};
+    try{await db.collection("logins") .doc(user.uid).set(logindata);
+        console.log("login info saved to firestore");}
+    catch(error){console.error("Error writing login info:",error);}
+}
+    });
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
