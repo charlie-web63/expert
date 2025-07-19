@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LED Product Gallery - LED App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f6f8fa; }
+        h1 { color: #2c3e50; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            padding: 1em;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .caption {
+            margin-top: 1em;
+            color: #555;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>LED Product Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0559/5253/0445/products/led-bulb.jpg?v=1669391234" alt="Smart LED Bulb">
+            <div class="caption">Smart LED Bulb - Change colors and brightness with your phone.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0559/5253/0445/products/led-strip.jpg?v=1669391234" alt="LED Strip Light">
+            <div class="caption">LED Strip Light - Flexible and perfect for accent lighting.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="RGB LED Panel">
+            <div class="caption">RGB LED Panel - Customizable color panel for creative setups.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0559/5253/0445/products/outdoor-floodlight.jpg?v=1669391234" alt="Outdoor LED Floodlight">
+            <div class="caption">Outdoor LED Floodlight - Weatherproof and high brightness.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="LED Desk Lamp">
+            <div class="caption">LED Desk Lamp - Adjustable brightness for workspaces.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.shopify.com/s/files/1/0559/5253/0445/products/led-ceiling-panel.jpg?v=1669391234" alt="LED Ceiling Panel">
+            <div class="caption">LED Ceiling Panel - Modern lighting for homes and offices.</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 LED App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - LED App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7fa; }
+        h1 { color: #2d3e50; }
+        .login-form {
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label { display: block; margin-top: 1em; }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1em;
+        }
+        .form-options label {
+            margin: 0;
+            font-size: 0.95em;
+        }
+        .forgot-link {
+            font-size: 0.95em;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .forgot-link:hover { text-decoration: underline; }
+        button {
+            margin-top: 1.5em;
+            padding: 0.7em 1.5em;
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover { background: #1c5d8c; }
+        .signup-link {
+            display: block;
+            text-align: center;
+            margin-top: 1em;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .signup-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Login to LED App</h1>
+    <form class="login-form" method="post" action="#">
+        <label for="username">Username or Email:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <div class="form-options">
+            <label>
+                <input type="checkbox" name="remember">
+                Remember Me
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+        <a href="signup.html" class="signup-link">Don't have an account? Sign Up</a>
+    </form>
+    <footer>
+        <p>&copy; 2024 LED App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

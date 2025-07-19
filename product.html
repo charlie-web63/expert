@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - LED App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f5f7fa; }
+        h1 { color: #2c3e50; }
+        .product-list { display: flex; flex-wrap: wrap; gap: 2em; }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            padding: 1.5em;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 1em;
+        }
+        .product-card h2 { margin: 0.5em 0; color: #2980b9; }
+        .product-card p { color: #555; }
+        .price { font-size: 1.2em; color: #27ae60; margin: 0.5em 0; }
+        .add-cart-btn {
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.7em 1.5em;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        .add-cart-btn:hover { background: #1c5d8c; }
+    </style>
+</head>
+<body>
+    <h1>LED Products</h1>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Smart LED Bulb">
+            <h2>Smart LED Bulb</h2>
+            <p>Control brightness and color from your phone. Energy efficient and easy to install.</p>
+            <div class="price">$19.99</div>
+            <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="LED Strip Light">
+            <h2>LED Strip Light</h2>
+            <p>Flexible, cuttable, and perfect for accent lighting. Includes remote control and adhesive backing.</p>
+            <div class="price">$24.99</div>
+            <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="RGB LED Panel">
+            <h2>RGB LED Panel</h2>
+            <p>Customizable color panel for creative lighting setups. App and voice control compatible.</p>
+            <div class="price">$49.99</div>
+            <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Outdoor LED Floodlight">
+            <h2>Outdoor LED Floodlight</h2>
+            <p>Weatherproof, high brightness, and long-lasting. Ideal for gardens and driveways.</p>
+            <div class="price">$39.99</div>
+            <button class="add-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 LED App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
